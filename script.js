@@ -46,17 +46,17 @@ for (let i = 0; i < passwordLength; i++) {
   var randomCharacter = Math.floor(Math.random() * chosenCharacters.length);
 
   if (randomCharacter === 0) {
-    password.push(chosenCharacters[0]); 
+    password.push(chosenCharacters[0]()); 
   } else if (randomCharacter === 1) {
-    password.push(chosenCharacters[1]);   
+    password.push(chosenCharacters[1]());   
   } else if (randomCharacter === 2) {
-    password.push(chosenCharacters[2]); 
+    password.push(chosenCharacters[2]()); 
   } else if (randomCharacter === 3) {
-    password.push(chosenCharacters[3]); 
+    password.push(chosenCharacters[3]()); 
   }
 }
 
-  return "password";
+  return password.toString();
 
 };
 
@@ -73,18 +73,27 @@ function lowercaseCharacters () {
 //Upper case letters
 function uppercaseCharacters () {
   var ucCharacters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+  var chosenUppercase = Math.floor(Math.random() * ucCharacters.length);
+  console.log(ucCharacters[chosenUppercase]);
+  return ucCharacters[chosenUppercase];
 }
 
 
 //Numeric characters
 function numericCharacters () {
   var numCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  var chosenNumcase = Math.floor(Math.random() * numCharacters.length);
+  console.log(numCharacters[chosenNumcase]);
+  return numCharacters[chosenNumcase];
 }
 
 
 //Special characters
 function specialCharacters () {
   var specCharacters = ['!', '@', '#', '$', '%', '^', '&', '*', '+', '=', '?'];
+  var chosenSpeccase = Math.floor(Math.random() * specCharacters.length);
+  console.log(specCharacters[chosenSpeccase]);
+  return specCharacters[chosenSpeccase];
 }
 
 
