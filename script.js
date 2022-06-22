@@ -56,7 +56,7 @@ for (let i = 0; i < passwordLength; i++) {
   }
 }
 
-  return password.toString();
+  return password.join("");
 
 };
 
