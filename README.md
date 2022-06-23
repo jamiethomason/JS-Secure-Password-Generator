@@ -12,4 +12,4 @@
 ## Website Preview
 Below is an image of the website's appearance:
 
-![Screenshot of Javascript Secure Password Generator](./Screen%20Shot%202022-06-21%20at%209.52.29%20PM.png)
+![Screenshot of Javascript Secure Password Generator](./assets/Screen%20Shot%202022-06-21%20at%209.52.29%20PM.png)
